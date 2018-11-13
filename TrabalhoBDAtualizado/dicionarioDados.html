@@ -1,0 +1,347 @@
+<html><head>
+<title>Schema Report for database: supermercado</title>
+<style>
+        td,th {
+        text-align:left;
+        vertical-align:middle;
+        }
+        table {
+        border-collapse: collapse;
+        border: 1px solid;
+        }
+        caption, th, td {
+        padding: .2em .8em;
+        border: 1px solid #000000;
+        }
+        caption {
+        background: #D3D3D3;
+        font-weight: bold;
+        font-size: 1.1em;
+        }
+        th {
+        font-weight: bold;
+        background: #000000;
+        color: white;
+        }
+        td {
+        background: #FFFFFF;
+        }
+        </style>
+      </head>
+     <body>
+<h1>Schema Report for database: supermercado</h1>
+<a id="home">Table List </a><br /><ul>
+<li><a href="#fornecedor">fornecedor </a></li>
+<li><a href="#produto">produto </a></li>
+<li><a href="#cliente">cliente </a></li>
+<li><a href="#venda">venda </a></li>
+<li><a href="#funcionario">funcionario </a></li>
+<li><a href="#conta_receber">conta_receber </a></li>
+<li><a href="#recebimento">recebimento </a></li>
+<li><a href="#item_venda">item_venda </a></li>
+<li><a href="#compra">compra </a></li>
+<li><a href="#item_compra">item_compra </a></li>
+<li><a href="#pagamento">pagamento </a></li>
+<li><a href="#conta_pagar">conta_pagar </a></li>
+<li><a href="#caixa">caixa </a></li>
+<li><a href="#compra_itemCompra">compra_itemCompra </a></li>
+<li><a href="#venda_itemVenda">venda_itemVenda </a></li>
+</ul>
+<a id="fornecedor"></a><table style="width:100%"><caption>Table: fornecedor </caption>
+<tr><td>Table Comments</td><td colspan="6">Tabela para armazenar os dados dos fornecedores</td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>forCodigo</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Codigo do fornecedor, campo para identificar cada fornecedor</td></tr>
+<tr><td>forNomeFantasia</td><td>VARCHAR(100)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Nome Fantasia, campo para armazenar o nome fantasia do fornecedor</td></tr>
+<tr><td>forRazaoSocial</td><td>VARCHAR(100)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Razao Social, campo para armazenar a RS do fornecedor</td></tr>
+<tr><td>forInscricaoEstadual</td><td>VARCHAR(15)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Inscricao Estadual, campo para armazenar a IE do fornecedor</td></tr>
+<tr><td>forCNPJ</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>CNPJ, campo para armazenar o cnpj do fornecedor</td></tr>
+<tr><td>forTelefone</td><td>VARCHAR(15)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Telefone, campo para armazenar o telefone do fornecedor</td></tr>
+<tr><td>forCelular</td><td>VARCHAR(11)</td><td>No</td><td>No</td><td>No</td><td></td><td>Celular, campo para armazenar o celular, caso o fornecedor o tenha</td></tr>
+<tr><td>forCidade</td><td>VARCHAR(80)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Cidade, campo que armazena a cidade onde filial que atende o supermercado fica</td></tr>
+<tr><td>forCidade</td><td>VARCHAR(30)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Estado, campo para armazenar o Estado onde filial que atende o supermercado fica</td></tr>
+<tr><td>forBairro</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Bairro, campo que armazena o bairro onde a filial que atende o supermercado fica</td></tr>
+<tr><td>forRua</td><td>VARCHAR(100)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Rua, campo que armazena a rua onde a filial que atende o supermercado fica</td></tr>
+<tr><td>forNumero</td><td>INT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Numero, campo que armazena o número do local onde a filial que atende o supermercado fica</td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="produto"></a><table style="width:100%"><caption>Table: produto </caption>
+<tr><td>Table Comments</td><td colspan="6">Tabela para armazenar os produtos do supermercado</td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>proCodigo</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Codigo, campo para identificar o produto</td></tr>
+<tr><td>proValorCusto</td><td>FLOAT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>ValorCusto, campo para armazenar o valor do produto</td></tr>
+<tr><td>proQuantidadeEstoque</td><td>INT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>QuantidadeEstoque, campo para armazenar a quantidade de produtos em estoque</td></tr>
+<tr><td>proNome</td><td>TEXT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Nome, campo para armazenar o nome do produto</td></tr>
+<tr><td>proMarca</td><td>VARCHAR(50)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Marca, campo para armazenar a marca do produto</td></tr>
+<tr><td>proValidade</td><td>DATE</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Validade, armazena a data de vencimento do produto</td></tr>
+<tr><td>proLote</td><td>VARCHAR(20)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Lote, campo para armazenar o lote do produto</td></tr>
+<tr><td>proUnidade</td><td>VARCHAR(2)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Unidade, campo para armazenar a unidade do produto</td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="cliente"></a><table style="width:100%"><caption>Table: cliente </caption>
+<tr><td>Table Comments</td><td colspan="6">Tabela para armazenar os clientes do supermercado</td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>cliCodigo</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Codigo, campo para identificar o cliente</td></tr>
+<tr><td>cliNome</td><td>TEXT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Nome, campo para armazenar o nome do cliente</td></tr>
+<tr><td>cliCPF</td><td>VARCHAR(11)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>CPF, campo para armazenar o cpf do cliente</td></tr>
+<tr><td>cliRG</td><td>VARCHAR(15)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>RG, campo para armazenar o rg do cliente</td></tr>
+<tr><td>cliTelefone</td><td>VARCHAR(15)</td><td>No</td><td>No</td><td>No</td><td></td><td>Telefone, campo para armazenar o telefone do cliente, se houver</td></tr>
+<tr><td>cliCelular</td><td>VARCHAR(11)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Celular, campo para armazenar o celular do cliente</td></tr>
+<tr><td>cliEstado</td><td>VARCHAR(30)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Estado, campo para armazenar o estado da residencia do cliente</td></tr>
+<tr><td>cliCidade</td><td>VARCHAR(80)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Cidade, campo para armazenar a cidade da residencia do cliente</td></tr>
+<tr><td>cliBairro</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Bairro, campo para armazenar o bairro da residencia do cliente</td></tr>
+<tr><td>cliRua</td><td>VARCHAR(100)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Rua, campo para armazenar a rua da residencia do cliente</td></tr>
+<tr><td>cliNumero</td><td>INT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Numero, campo para armazenar o numero onde localiza-se a residencia do cliente</td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="venda"></a><table style="width:100%"><caption>Table: venda </caption>
+<tr><td>Table Comments</td><td colspan="6">Tabela para armazenar as vendas do supermercado</td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>venCodigo</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Codigo, campo para identificar a venda</td></tr>
+<tr><td>venValorTotal</td><td>FLOAT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>ValorTotal, campo para armazenar o valor total da venda</td></tr>
+<tr><td>venData</td><td>DATE</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Data, campo para armazenar a data da venda</td></tr>
+<tr><td>venHora</td><td>TIME</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Hora, campo para armazenar a hora da venda</td></tr>
+<tr><td>ven_cliCodigo</td><td>INT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Codigo do cliente, FK do cliente, para armazenar os dados do cliente presente na venda</td></tr>
+<tr><td>ven_funCodigo</td><td>INT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Codigo do funcionario, FK do funcionario, para armazenar os dados do funcionario presente na venda</td></tr>
+<tr><td>caixa_caiCodigo</td><td>INT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Codigo do caixa, FK do caixa, para armazenar a situação do caixa no momento da venda</td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="funcionario"></a><table style="width:100%"><caption>Table: funcionario </caption>
+<tr><td>Table Comments</td><td colspan="6">Tabela para armazenar os dados dos funcionarios do supermercado</td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>funCodigo</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Codigo, campo para identificar o funcionario</td></tr>
+<tr><td>funNome</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Nome, campo para armazenar o nome do funcionario</td></tr>
+<tr><td>funSalario</td><td>FLOAT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Salario, campo para armazenar o salario do funcionario</td></tr>
+<tr><td>funCPF</td><td>VARCHAR(11)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>CPF, campo para armazenar o cpf do funcionario</td></tr>
+<tr><td>funRG</td><td>VARCHAR(15)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>RG, campo para armazenar o rg do funcionario</td></tr>
+<tr><td>funTelefone</td><td>VARCHAR(15)</td><td>No</td><td>No</td><td>No</td><td></td><td>Telefone, campo para armazenar o telefone do funcionario se houver</td></tr>
+<tr><td>funCelular</td><td>VARCHAR(11)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Celular, campo para armazenar o celular do funcionario</td></tr>
+<tr><td>funEstado</td><td>VARCHAR(30)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Estado, campo para armazenar o estado da residencia do funcionario</td></tr>
+<tr><td>funCidade</td><td>VARCHAR(80)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Cidade, campo para armazenar a cidade da residencia do funcionario</td></tr>
+<tr><td>funBairro</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Bairro, campo para armazenar o bairro da residencia do funcionario</td></tr>
+<tr><td>funRua</td><td>VARCHAR(100)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Rua, campo para armazenar a rua da residencia do funcionario</td></tr>
+<tr><td>funNumero</td><td>INT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Numero, campo para armazenar o numero da residencia do funcionario</td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="conta_receber"></a><table style="width:100%"><caption>Table: conta_receber </caption>
+<tr><td>Table Comments</td><td colspan="6">Tabela para armazenar as contas a receber do supermercado</td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>ctrCodigo</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Codigo, campo para identificar a conta a receber</td></tr>
+<tr><td>ctrData</td><td>DATE</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Data, campo para armazenar a data que a conta a receber foi gerada</td></tr>
+<tr><td>ctrFormaRecebimento</td><td>VARCHAR(20)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>FormaRecebimento, campo para armazenar a forma de recebimento da conta a receber</td></tr>
+<tr><td>ctrQuantidadeParcelas</td><td>INT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>QuantidadeParcelas, campo para armazenar a quantidade de parcelas da conta a receber</td></tr>
+<tr><td>ctrValorParcelas</td><td>FLOAT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>ValorParcelas, campo para armazenar o valor das parcelas da conta a receber</td></tr>
+<tr><td>ctrDiaVencimentos</td><td>INT</td><td>Yes</td><td>No</td><td>No</td><td>10</td><td>DiaVencimentos, campo para armazenar o dia de vencimento(igual para todos os meses) da conta a receber</td></tr>
+<tr><td>ctr_venCodigo</td><td>INT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Codigo da venda, FK da venda, para passar os dados da venda</td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="recebimento"></a><table style="width:100%"><caption>Table: recebimento </caption>
+<tr><td>Table Comments</td><td colspan="6">Tabela para armazenar os recebimentos do supermercado</td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>recCodigo</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Codigo, campo para identificar o recebimento</td></tr>
+<tr><td>recData</td><td>DATE</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Data, campo para armazenar a data do recebimento</td></tr>
+<tr><td>recHora</td><td>TIME</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Hora, campo para armazenar a hora do recebimento</td></tr>
+<tr><td>recValorRecebido</td><td>FLOAT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>ValorRecebido, campo para armazenar o valor recebido no recebimento</td></tr>
+<tr><td>recStatus</td><td>TINYINT(1)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Status, campo para armazenar se o recebimento foi realizado ou não</td></tr>
+<tr><td>rec_ctrCodigo</td><td>INT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Codigo da conta a receber, FK da conta a receber, para passar os dados da conta a receber ao recebimento</td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="item_venda"></a><table style="width:100%"><caption>Table: item_venda </caption>
+<tr><td>Table Comments</td><td colspan="6">Tabela para armazenar os itens de venda dos produtos do supermecado</td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>itvCodigo</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Codigo, campo para identificar o item de venda</td></tr>
+<tr><td>itvQuantidade</td><td>FLOAT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Quantidade, campo para armazenar a quantidade do item de venda do produto</td></tr>
+<tr><td>itvDesconto</td><td>FLOAT</td><td>Yes</td><td>No</td><td>No</td><td>0</td><td>Desconto, campo para armazenar o desconto do item de venda do produto</td></tr>
+<tr><td>itvValorTotal</td><td>FLOAT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>ValorTotal, campo para armazenar o valor total do item de venda do produto</td></tr>
+<tr><td>itv_proCodigo</td><td>INT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Codigo do produto, FK do produto, para passar os dados do produto</td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="compra"></a><table style="width:100%"><caption>Table: compra </caption>
+<tr><td>Table Comments</td><td colspan="6">Tabela para armazenar as compras do supermercado</td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>comCodigo</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Codigo, campo para identifcar as comprar do supermercado</td></tr>
+<tr><td>comData</td><td>DATE</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Data, campo para armazenar a data das compras do supermercado</td></tr>
+<tr><td>comHora</td><td>TIME</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Hora, campo para armazenar a horas da compras do supermercado</td></tr>
+<tr><td>comValor</td><td>FLOAT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Valor, campo para armazenar o valor da compras do supermercado</td></tr>
+<tr><td>com_funCodigo</td><td>INT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Codigo do funcionario, FK do funcionario, para armazenar o funcionario que fez a compra</td></tr>
+<tr><td>com_forCodigo</td><td>INT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Codigo do fornecedor, FK do Fornecedor, campo para armazenar o fornecedor de quem a compra foi feita</td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="item_compra"></a><table style="width:100%"><caption>Table: item_compra </caption>
+<tr><td>Table Comments</td><td colspan="6">Tabela para armazenar os itens de compra dos produtos do supermercado</td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>itcCodigo</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Codigo, campo para identificar o item de compra</td></tr>
+<tr><td>itc_proCodigo</td><td>INT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Codigo do produto, FK do produto, para armazenar os dados do produto do item de compra</td></tr>
+<tr><td>itcQuantidade</td><td>INT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Quantidade, campo para armazenar a quantidade de produtos(mesmo produto) do item de compra</td></tr>
+<tr><td>itcValorTotal</td><td>FLOAT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>ValorTotal, campo para armazenar </td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="pagamento"></a><table style="width:100%"><caption>Table: pagamento </caption>
+<tr><td>Table Comments</td><td colspan="6">Tabela para armazenar os pagamentos realizados pelo supermercado</td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>pagCodigo</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Codigo, campo para identificar os pagamentos do supermercado</td></tr>
+<tr><td>pagData</td><td>DATE</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Data, campo para armazenar a data dos pagamentos do supermercado</td></tr>
+<tr><td>pagHora</td><td>TIME</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Hora, campo para armazenar os pagamentos do supermercado</td></tr>
+<tr><td>pagValorPago</td><td>FLOAT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>ValorPago, campo para armazenar o valor que foi pago pelo supermercado</td></tr>
+<tr><td>pagStatus</td><td>TINYINT(1)</td><td>Yes</td><td>No</td><td>No</td><td>0</td><td>Status, campo para armazenar se o supermercado realizou o pagamento</td></tr>
+<tr><td>pag_ctpCodigo</td><td>INT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Codigo da conta a pagar, FK da conta a pagar, passa as informações da conta a pagar para o pagamento</td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="conta_pagar"></a><table style="width:100%"><caption>Table: conta_pagar </caption>
+<tr><td>Table Comments</td><td colspan="6">Tabela para armazernar as contas a pagar do supermercado</td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>ctpCodigo</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Codigo, campo para identificar a conta a pagar</td></tr>
+<tr><td>ctrData</td><td>DATE</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Data, campo para armazenar a data da conta a pagar</td></tr>
+<tr><td>ctrFormaPagamento</td><td>VARCHAR(20)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>FormaPagamento, campo para armazenar a forma de pagamento da conta a pagar</td></tr>
+<tr><td>ctrQuantidadeParcelas</td><td>INT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>QuantidadeParcelas, campo para armazenar a quantidade de parcelas gerada na conta a pagar</td></tr>
+<tr><td>ctrValorParcelas</td><td>FLOAT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>ValorParcelas, campo para armazenar o valor das parcelas da conta pagar gerada</td></tr>
+<tr><td>ctrDiaVencimentos</td><td>INT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>DiaVencimentos, campo para armazenar os dias de vencimento(igual em todos os meses) da conta a pagar</td></tr>
+<tr><td>ctr_comCodigo</td><td>INT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Codigo da compra, FK da compra, para armazenar os dados da compra</td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="caixa"></a><table style="width:100%"><caption>Table: caixa </caption>
+<tr><td>Table Comments</td><td colspan="6">Tabela para guardar os dados do caixa do supermercado</td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>caiCodigo</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Codigo, campo para identificar o caixa do supermercado(Caixa que armazena dinheiro, não funcionario)</td></tr>
+<tr><td>caiHoraAbertura</td><td>TIME</td><td>Yes</td><td>No</td><td>No</td><td></td><td>HoraAbertura, campo para armazenar a hora abertura do caixa</td></tr>
+<tr><td>caiHoraFechamento</td><td>TIME</td><td>No</td><td>No</td><td>No</td><td></td><td>HoraFechamento, campo para armazenar a hora de fechamento do caixa</td></tr>
+<tr><td>caiData</td><td>DATE</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Data, campo para armazenar a data atual do caixa</td></tr>
+<tr><td>caiValorAbertura</td><td>FLOAT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>ValorAbertura, campo para armazenar o valor de abertura do caixa</td></tr>
+<tr><td>caiValorFechamento</td><td>FLOAT</td><td>No</td><td>No</td><td>No</td><td></td><td>ValorFechamento, campo para armazenar o valor de fechamento do caixa</td></tr>
+<tr><td>caiStatus</td><td>TINYINT(1)</td><td>No</td><td>No</td><td>No</td><td></td><td>Status, campo para armazenar o status do caixa</td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="compra_itemCompra"></a><table style="width:100%"><caption>Table: compra_itemCompra </caption>
+<tr><td>Table Comments</td><td colspan="6">Tabela para unir o item de compra com a compra e permitir mais de um item de compra por compra</td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>cic_comCodigo</td><td>INT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Codigo da compra, FK da compra, para armazenar a compra em conjunto com os itens de compra e permitir mais de um item de compra por compra</td></tr>
+<tr><td>cic_itcCodigo</td><td>INT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Codigo do item de compra, FK do item de compra, para armazenar os itens de compra com a compra e permitir mais de um item de compra por compra</td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="venda_itemVenda"></a><table style="width:100%"><caption>Table: venda_itemVenda </caption>
+<tr><td>Table Comments</td><td colspan="6">Tabela para armazenar a venda em conjunto com o item de venda para possibilitar a existencia de mais de um item de venda por venda</td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>viv_venCodigo</td><td>INT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Codigo da venda, FK da venda, para armazenar dados da venda e permitir mais de um item de venda por venda</td></tr>
+<tr><td>viv_itvCodigo</td><td>INT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Codigo do item de venda, FK do item de venda, para armazenar os dados do item de venda e permitir mais de um item de venda por venda</td></tr>
+</table><a href="#home">Table List </a></br>
+</body></html>
