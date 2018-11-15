@@ -39,4 +39,44 @@ insert into cliente(cliNome,cliCPF, cliRG,cliTelefone, cliCelular, cliEstado, cl
 values("Adalberto Novaes Santos","15423216532","895148796",null,"68923479632","Acre","Rio Branco","Boa Esperança","Iguaçu",753);
 insert into cliente(cliNome,cliCPF, cliRG,cliTelefone, cliCelular, cliEstado, cliCidade, cliBairro, cliRua, cliNumero)
 values("Daniel Soares Filho","25896312457","621478759",null,"85954877896","Ceará","Fortaleza","Alto da Serra","Veneza",8542);
---Outros inserts abaixo
+--inserts produtos
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(7.0,50,"Refrigerante","Coca-Cola",'2019-01-15',"14a871ge98","LT");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(15.5,25,"Sabão em Pó","OMO",'2019-04-22',"A1fsE21fb","KG");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(8.50,80,"Café","3 Corações",'2019-02-10',"5EfsVxsa12","GR");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(9,50,"Filé de Frango","Big",'2018-12-20',"mEa90sfXeQ","KG");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(7.50,100,"Açucar","Cristal",'2020-07-05',"KjsA12Oeq1","KG");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(4.25,35,"Farinha de Trigo","SM",'2019-12-18',"nE13fx9aN1x","KG");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(3.29,50,"Macarrão","Amália",'2019-05-25',"Wgf12xl9a34","GR");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(7.0,50,"Refrigerante","Coca-Cola",'2019-01-15',"14a871ge98","LT");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(7.0,50,"Refrigerante","Coca-Cola",'2019-01-15',"14a871ge98","LT");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(7.0,50,"Refrigerante","Coca-Cola",'2019-01-15',"14a871ge98","LT");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(7.0,50,"Refrigerante","Coca-Cola",'2019-01-15',"14a871ge98","LT");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(7.0,50,"Refrigerante","Coca-Cola",'2019-01-15',"14a871ge98","LT");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(7.0,50,"Refrigerante","Coca-Cola",'2019-01-15',"14a871ge98","LT");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(7.0,50,"Refrigerante","Coca-Cola",'2019-01-15',"14a871ge98","LT");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(7.0,50,"Refrigerante","Coca-Cola",'2019-01-15',"14a871ge98","LT");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(7.0,50,"Refrigerante","Coca-Cola",'2019-01-15',"14a871ge98","LT");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(7.0,50,"Refrigerante","Coca-Cola",'2019-01-15',"14a871ge98","LT");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(7.0,50,"Refrigerante","Coca-Cola",'2019-01-15',"14a871ge98","LT");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(7.0,50,"Refrigerante","Coca-Cola",'2019-01-15',"14a871ge98","LT");
+insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
+values(7.0,50,"Refrigerante","Coca-Cola",'2019-01-15',"14a871ge98","LT");
