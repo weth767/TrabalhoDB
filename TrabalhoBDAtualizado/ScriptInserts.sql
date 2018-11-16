@@ -80,3 +80,44 @@ insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proV
 values(7.0,50,"Refrigerante","Coca-Cola",'2019-01-15',"14a871ge98","LT");
 insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
 values(7.0,50,"Refrigerante","Coca-Cola",'2019-01-15',"14a871ge98","LT");
+--inserts dos funcionarios
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Lucas Mateus", 5000.0, "12345678901", "123456789", "37999999999", "37989999999", "Minas Gerais", "Formiga", "Nossa Senhora de Lurdes", "Rua um", 1);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Mateus Lucas", 1000.0, "1785678901", "673456789", "37999999990", "37989999990", "Pernambuco", "Olinda", "Nossa Senhora de Olinda", "Rua dois", 2);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Breno Batista", 3000.0, "12345678986", "123456711", "37999999991", "37989999991", "Rio de Janeiro", "Cabo Frio", "Nossa Senhora de Frio", "Rua tres", 3);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Saulo Ricardo", 5500.0, "12985678901", "291456789", "37999999992", "37989999992", "Minas Gerais", "Formiga", "Ouro Verde", "Rua quatro", 4);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Willian Lemos", 15000.0, "12926678901", "009356789", "37999999993", "37989999993", "São Paulo", "Santos", "Bairro Gold", "Rua cinco", 5);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Muca Muriçoca", 10000.0, "12345678741", "123491789", "37999999994", "37989999994", "Goiás", "Goiânia", "Nossa Senhora do Sertanejo", "Rua seis", 6);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Eduardo Paiva", 7000.0, "12345078901", "120056789", "37999999995", "37989999995", "Paraná", "Cascavel", "Buraco de cobra", "Rua sete", 7);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Patrícia Mendes", 4000.0, "12261678901", "127635789", "37999999996", "37989999996", "Minas Gerais", "Lavras", "Nossa Senhora de Lavras", "Rua oito", 8);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Marília Souza", 6000.0, "13125678901", "023456789", "37999999997", "37989999997", "Rio Grande do Sul", "Porto Alegre", "Nossa Senhora do Frio", "Rua nove", 9);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Joana Silva", 20000.0, "09345678901", "197156789", "37999999998", "37989999998", "Sergipe", "Pequeno", "Nossa Senhora", "Rua dez", 10);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("José Arantes", 3000.0, "12345078901", "123256789", "37999999909", "37989999909", "Minas Gerais", "Arcos", "Nossa Senhora dos Arcos", "Rua onze", 11);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Maria José", 9500.0, "12340878901", "123456765", "37999999919", "37989999919", "Santa Catarina", "Florianópolis", "Nossa Santa de Catarina", "Rua doze", 12);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Ronaldo Orlando", 4400.0, "83018678901", "123456799", "37999999929", "37989999929", "Espírito Santo", "Guarapari", "Nossa Senhora de Praia", "Rua treze", 13);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Renata Oliveira", 15000.0, "19995678901", "123450289", "37999999939", "37989999939", "Amazonas", "Manaus", "Nossa Senhora da Mata", "Rua quatorze", 14);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Alexandre Manoel", 2200.0, "12355678901", "123456289", "37999999949", "37989999949", "Ceará", "Juazeiro", "Nossa Senhora da Seca", "Rua quize", 15);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Luís Henrique", 5050.0, "12345674651", "122856789", "37999999959", "37989999959", "Mato Grosso", "Cuiabá", "Nossa Senhora do Pantanal", "Rua dezesseis", 16);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Luísa Fransisca", 500.0, "12775678901", "123459989", "37999999969", "37989999969", "São Paulo", "Osasco", "Nossa Senhora da Malandragem", "Rua dezessete", 17);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Maria Aparecida", 11000.0, "12111678901", "913456789", "37999999979", "37989999979", "São Paulo", "Itú", "Nossa Senhora de Itubaina", "Rua dezoito", 18);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Manoel Henrique", 4500.0, "00345678901", "123405789", "37999999989", "37989999989", "Paraíba", "João Pessoa", "Nossa Senhora de Pessoas", "Rua dezenove", 19);
+insert into funcionario(funNome, funSalario, funCPF, funRG, funTelefone, funCelular, funEstado, funCidade, funBairro, funRua, funNumero)
+values("Mateus Vinícius", 7550.0, "12766678901", "128302889", "37999999199", "37989999199", "Minas Gerais", "Bambuí", "Nossa Senhora de Bambuí", "Rua vinte", 20);
