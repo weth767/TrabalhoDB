@@ -251,6 +251,143 @@ values(10,5);
 insert into venda_itemVenda(viv_venCodigo,viv_itvCodigo)
 values(10,6);
 insert into venda_itemVenda(viv_venCodigo,viv_itvCodigo)
-values(11,3);
+values(1,3);
 insert into venda_itemVenda(viv_venCodigo,viv_itvCodigo)
-values(11,4);
+values(1,4);
+#Inserte tabela Compra
+insert into compra(comData, comHora,comValor,com_funCodigo,com_forCodigo)
+values("2018-12-25","10:20",200.70,1,1);
+insert into compra(comData, comHora,comValor,com_funCodigo,com_forCodigo)
+values("2018-10-21","11:29",90.62,1,2); 
+insert into compra(comData, comHora,comValor,com_funCodigo,com_forCodigo)
+values("2018-11-01","05:29",10.72,7,10);
+insert into compra(comData, comHora,comValor,com_funCodigo,com_forCodigo)
+values("2018-05-29","19:29",11.76,19,12);
+insert into compra(comData, comHora,comValor,com_funCodigo,com_forCodigo)
+values("2018-12-01","17:00",50.00,5,5);
+insert into compra(comData, comHora,comValor,com_funCodigo,com_forCodigo)
+values("2018-02-13","11:30",25.20,7,4);
+insert into compra(comData, comHora,comValor,com_funCodigo,com_forCodigo)
+values("2018-10-21","11:29",200,2,19);
+insert into compra(comData, comHora,comValor,com_funCodigo,com_forCodigo)
+values("2018-11-15","14:32",2020.21,20,20);
+insert into compra(comData, comHora,comValor,com_funCodigo,com_forCodigo)
+values("2018-12-30","15:09",22.90,3,9);
+insert into compra(comData, comHora,comValor,com_funCodigo,com_forCodigo)
+values("2018-10-15","12:29",157.79,5,1);   
+#Inserte tabela item Compra
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(1,700,700);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(2,50,20.99);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(3,71,72.99);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(4,7,2.78);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(5,60,99.12);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(6,70,71.91);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(7,87,32);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(8,788,98.00);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(9,502,120.98);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(10,712,7000);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(11,12,2986.98);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(12,871,10000.90);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(13,776,721);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(14,98,72);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(15,1,22.60);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(16,89,99.01);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(17,12,100);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(18,98,178.00);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(19,8100,10000);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
+values(20,87,123.08);
+#inserte na tabela compra_itemCompra
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(1,2);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(2,2);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(3,3);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(4,4);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(5,5);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(5,6);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(4,7);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(8,8);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(7,9);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(2,10);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(3,11);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(4,12);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(5,13);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(6,14);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(7,15);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(8,16);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(9,17);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(10,18);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(2,19);
+insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
+values(4,20);
+#inserte na tabela conta_pagar
+insert into conta_pagar(ctrData,ctrFormaPagamento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_comCodigo)
+values("2018-09-12","Cartao Credito",10,2,25,1);
+insert into conta_pagar(ctrData,ctrFormaPagamento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_comCodigo)
+values("2018-10-11","A vista",1,200,2,2);
+insert into conta_pagar(ctrData,ctrFormaPagamento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_comCodigo)
+values("2018-11-12","Cartao Debito",25,20,10,3);
+insert into conta_pagar(ctrData,ctrFormaPagamento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_comCodigo)
+values("2018-09-01","Boleto bancario",20,41,5,4);
+insert into conta_pagar(ctrData,ctrFormaPagamento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_comCodigo)
+values("2018-10-31","Cartao Credito",25,100,20,5);
+insert into conta_pagar(ctrData,ctrFormaPagamento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_comCodigo)
+values("2018-05-19","Cartao Debito",2,1000,13,6);
+insert into conta_pagar(ctrData,ctrFormaPagamento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_comCodigo)
+values("2018-02-28","A vista",1,1000,30,7);
+insert into conta_pagar(ctrData,ctrFormaPagamento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_comCodigo)
+values("2018-10-30","Cartao Credito",15,200,30,8);
+insert into conta_pagar(ctrData,ctrFormaPagamento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_comCodigo)
+values("2018-08-16","Cartao Debito",5,105,30,9);
+insert into conta_pagar(ctrData,ctrFormaPagamento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_comCodigo)
+values("2018-12-12","Boleto Bancario",10,2,25,10);
+#inserte na tabela pagamento
+insert into pagamento(pagData,pagHora,pagValorPago,pagStatus,pag_ctpCodigo)
+values("2018-12-25","10:10",5,false,1);
+insert into pagamento(pagData,pagHora,pagValorPago,pagStatus,pag_ctpCodigo)
+values("2018-10-11","12:16",200,true,2);
+insert into pagamento(pagData,pagHora,pagValorPago,pagStatus,pag_ctpCodigo)
+values("2018-11-12","10:39",4,false,3);
+insert into pagamento(pagData,pagHora,pagValorPago,pagStatus,pag_ctpCodigo)
+values("2018-09-01","17:19",70,false,4);
+insert into pagamento(pagData,pagHora,pagValorPago,pagStatus,pag_ctpCodigo)
+values("2018-11-30","19:30",25000,true,5);
+insert into pagamento(pagData,pagHora,pagValorPago,pagStatus,pag_ctpCodigo)
+values("2018-05-19","16:16",1000,false,6);
