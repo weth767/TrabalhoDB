@@ -61,9 +61,9 @@ values(3.25, 120, "Leite de Boi", "Sonia Leiteira", '2019-04-22', "SL1999", "L")
 insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
 values(31.9, 60, "CD - Regia Danese: Entra na minha casa", "Profanity Records", '2025-05-05', "KK5555", "UN");
 insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
-values(7.05, "Farinha", "Vovó Zenilda", '2021-05-12', "OL7824", "KG");
+values(7.05,100, "Farinha", "Vovó Zenilda", '2021-05-12', "OL7824", "KG");
 insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
-values(2.9, 72, "Açucar Refinado", '2019-06-08', "RE8969", "KG");
+values(2.9, 72, "Açucar Refinado","Marca Que o Breno Não Colocou", '2019-06-08', "RE8969", "KG");
 insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
 values(3.89, 67, "Leite", "Cemil", '2018-12-12', "LK7832", "L");
 insert into produto(proValorCusto, proQuantidadeEstoque, proNome, proMarca, proValidade, proLote, proUnidade)
@@ -147,21 +147,21 @@ values("Matadouro", "Mata Onça","798923109922","50289962000180", "99888777666",
 insert into fornecedor(forNomeFantasia, forRazaoSocial, forInscricaoEstadual, forCNPJ, forTelefone, forCelular, forEstado, forCidade, forBairro, forRua, forNumero) 
 values("Casa de rolinha", "Rolinhas Grandes","016933270983","95010989000120", "37898652126","78986543256","Minas Gerais","Corrego Fundo","Irine Braga","Novo Horizontinho",767);
 insert into fornecedor(forNomeFantasia, forRazaoSocial, forInscricaoEstadual, forCNPJ, forTelefone, forCelular, forEstado, forCidade, forBairro, forRua, forNumero) 
-values("Pao de queijo", "Minas queijos","743453360262","27276115000160", "37876544756","370865432278","Minas Gerais","Sete Lagoas","Lagoa Azul","Jose da Silveira",937);
+values("Pao de queijo", "Minas queijos","743453360262","27276115000160", "37876544756","37086543248","Minas Gerais","Sete Lagoas","Lagoa Azul","Jose da Silveira",937);
 insert into fornecedor(forNomeFantasia, forRazaoSocial, forInscricaoEstadual, forCNPJ, forTelefone, forCelular, forEstado, forCidade, forBairro, forRua, forNumero) 
 values("Kasa da Mamãe Franga", "Frangos","010209161300","12859401000180", "37998628261","37999888777","Minas Gerais","Belo Horizonte","Jose Vilano","Ratao Azul",24);
 insert into fornecedor(forNomeFantasia, forRazaoSocial, forInscricaoEstadual, forCNPJ, forTelefone, forCelular, forEstado, forCidade, forBairro, forRua, forNumero) 
 values("Angus e Cia", "Angus","058909650009","35331059000147", "37987654378","37098753781","São Paulo","São Paulo","Joao Serra Souza","Agua Vermelha",241);
 insert into fornecedor(forNomeFantasia, forRazaoSocial, forInscricaoEstadual, forCNPJ, forTelefone, forCelular, forEstado, forCidade, forBairro, forRua, forNumero) 
-values("Baby Branco Arroz", "Baby Arroz","716796419869","79530882000157", "37999765308","Rio de Janeiro","37986191620","Rio de Janeiro","Rocinha da Lapa","Virando as Botas",69);
+values("Baby Branco Arroz", "Baby Arroz","716796419869","79530882000157", "37999765308","37986191620","Rio de Janeiro","Rio de Janeiro","Rocinha da Lapa","Virando as Botas",69);
 insert into fornecedor(forNomeFantasia, forRazaoSocial, forInscricaoEstadual, forCNPJ, forTelefone, forCelular, forEstado, forCidade, forBairro, forRua, forNumero) 
 values("Queijo do Irineu", "Queijos Azuis","763644212156","30428422000123", "409998887700","Paraná","40999888777","Umuarama","Guratingueta do norte","Rolandia Pretaça",1903);
 insert into fornecedor(forNomeFantasia, forRazaoSocial, forInscricaoEstadual, forCNPJ, forTelefone, forCelular, forEstado, forCidade, forBairro, forRua, forNumero) 
 values("Barak Fraldas", "Fraldas Brancas do Barak","779626877950","01983353000111", "37999000888","37888777666","Minas Gerais","Formiga","Sagrado Coracao","Abilio Machado",290);
 insert into fornecedor(forNomeFantasia, forRazaoSocial, forInscricaoEstadual, forCNPJ, forTelefone, forCelular, forEstado, forCidade, forBairro, forRua, forNumero) 
-values("Presuntos BH", "Presultos BH","694921183561","21785195000100", "37909888777","419998887754","Minas Gerais","Corrego Fundo","Areia Seca","Rodinha Da Laje",22);
+values("Presuntos BH", "Presultos BH","694921183561","21785195000100", "37909888777","41999888775","Minas Gerais","Corrego Fundo","Areia Seca","Rodinha Da Laje",22);
 insert into fornecedor(forNomeFantasia, forRazaoSocial, forInscricaoEstadual, forCNPJ, forTelefone, forCelular, forEstado, forCidade, forBairro, forRua, forNumero) 
-values("Agua Mineral Arcos", "Arcos Aguas","228185354727","96444470000113", "37999555432","379098555432","Minas Gerais","Formiga","Centro","Henrique Braga",221);
+values("Agua Mineral Arcos", "Arcos Aguas","228185354727","96444470000113", "37999555432","37909855543","Minas Gerais","Formiga","Centro","Henrique Braga",221);
 insert into fornecedor(forNomeFantasia, forRazaoSocial, forInscricaoEstadual, forCNPJ, forTelefone, forCelular, forEstado, forCidade, forBairro, forRua, forNumero) 
 values("Dolores Empadas", "Dolores Empadas","786507382442","49980265000192", "37888666555","37999812648","Minas Gerais","Formiga","Areias Brancas","Center Ruas",931);
 insert into fornecedor(forNomeFantasia, forRazaoSocial, forInscricaoEstadual, forCNPJ, forTelefone, forCelular, forEstado, forCidade, forBairro, forRua, forNumero) 
