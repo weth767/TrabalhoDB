@@ -176,3 +176,81 @@ insert into fornecedor(forNomeFantasia, forRazaoSocial, forInscricaoEstadual, fo
 values("Kasa da Mandioca Preta", "Mandioca Pretinha","698955366283","14211439000178", "37986543797","37988654162","Minas Gerais","Corrego Fundo","Boa Morte","Joao Azul",8);
 insert into fornecedor(forNomeFantasia, forRazaoSocial, forInscricaoEstadual, forCNPJ, forTelefone, forCelular, forEstado, forCidade, forBairro, forRua, forNumero) 
 values("Loras Shampoo", "Shampoos Loras","774438130283","68274344000122", "76875682918","76789086","Minas Gerais","Sete Lagoas","Centro","Padilha Brancas",1);
+#Inserts do caixa
+insert into caixa(caiHoraAbertura,caiHoraFechamento,caiData,CaiValorAbertura,caiValorFechamento,caiStatus)
+values('08:05',null,'2018-11-17',183.65,null,true);
+insert into caixa(caiHoraAbertura,caiHoraFechamento,caiData,CaiValorAbertura,caiValorFechamento,caiStatus)
+values('08:05',null,'2018-11-17',164.15,null,true);
+insert into caixa(caiHoraAbertura,caiHoraFechamento,caiData,CaiValorAbertura,caiValorFechamento,caiStatus)
+values('08:05',null,'2018-11-17',226.90,null,true);
+insert into caixa(caiHoraAbertura,caiHoraFechamento,caiData,CaiValorAbertura,caiValorFechamento,caiStatus)
+values('14:05',null,'2018-11-17',93.55,null,true);
+insert into caixa(caiHoraAbertura,caiHoraFechamento,caiData,CaiValorAbertura,caiValorFechamento,caiStatus)
+values('14:05',null,'2018-11-17',132.50,null,true);
+insert into caixa(caiHoraAbertura,caiHoraFechamento,caiData,CaiValorAbertura,caiValorFechamento,caiStatus)
+values('14:05',null,'2018-11-17',230.10,null,true);
+insert into caixa(caiHoraAbertura,caiHoraFechamento,caiData,CaiValorAbertura,caiValorFechamento,caiStatus)
+values('18:05',null,'2018-11-17',65.60,null,true);
+insert into caixa(caiHoraAbertura,caiHoraFechamento,caiData,CaiValorAbertura,caiValorFechamento,caiStatus)
+values('18:05',null,'2018-11-17',190.80,null,true);
+insert into caixa(caiHoraAbertura,caiHoraFechamento,caiData,CaiValorAbertura,caiValorFechamento,caiStatus)
+values('18:05',null,'2018-11-17',154.25,null,true);
+insert into caixa(caiHoraAbertura,caiHoraFechamento,caiData,CaiValorAbertura,caiValorFechamento,caiStatus)
+values('18:05',null,'2018-11-17',200.00,null,true);
+#Inserts da venda
+insert into venda(venValorTotal,venData,venHora,ven_cliCodigo,ven_funCodigo,caixa_caiCodigo)
+values(250.58,'2018-11-17','08:36',2,1,1);
+insert into venda(venValorTotal,venData,venHora,ven_cliCodigo,ven_funCodigo,caixa_caiCodigo)
+values(86.98,'2018-11-17','08:55',3,4,5);
+insert into venda(venValorTotal,venData,venHora,ven_cliCodigo,ven_funCodigo,caixa_caiCodigo)
+values(152.64,'2018-11-17','09:16',5,3,6);
+insert into venda(venValorTotal,venData,venHora,ven_cliCodigo,ven_funCodigo,caixa_caiCodigo)
+values(380.82,'2018-11-17','09:36',9,1,1);
+insert into venda(venValorTotal,venData,venHora,ven_cliCodigo,ven_funCodigo,caixa_caiCodigo)
+values(61.45,'2018-11-17','09:56',4,4,7);
+insert into venda(venValorTotal,venData,venHora,ven_cliCodigo,ven_funCodigo,caixa_caiCodigo)
+values(50.03,'2018-11-17','14:26',15,18,1);
+insert into venda(venValorTotal,venData,venHora,ven_cliCodigo,ven_funCodigo,caixa_caiCodigo)
+values(352.76,'2018-11-17','14:42',12,14,5);
+insert into venda(venValorTotal,venData,venHora,ven_cliCodigo,ven_funCodigo,caixa_caiCodigo)
+values(27.49,'2018-11-17','15:23',7,17,3);
+insert into venda(venValorTotal,venData,venHora,ven_cliCodigo,ven_funCodigo,caixa_caiCodigo)
+values(210.09,'2018-11-17','18:36',16,15,2);
+insert into venda(venValorTotal,venData,venHora,ven_cliCodigo,ven_funCodigo,caixa_caiCodigo)
+values(109.73,'2018-11-17','19:06',18,12,9);
+#Inserts do item_venda
+insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
+values(5,0,35.0,1);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
+values(2,2.0,29.0,2);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
+values(3,0,25.5,3);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
+values(4,5,31.0,4);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
+values(1,0,7.50,5);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
+values(2,0,8.50,6);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
+values(5,5.50,74.0,7);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
+values(3,0,4.83,8);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
+values(4,2,11.0,9);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
+values(1,0,31.90,10); 
+#Inserts do venda_itemVenda
+insert into venda_itemVenda(viv_venCodigo,viv_itvCodigo)
+values(9,2);
+insert into venda_itemVenda(viv_venCodigo,viv_itvCodigo)
+values(9,3);
+insert into venda_itemVenda(viv_venCodigo,viv_itvCodigo)
+values(10,4);
+insert into venda_itemVenda(viv_venCodigo,viv_itvCodigo)
+values(10,5);
+insert into venda_itemVenda(viv_venCodigo,viv_itvCodigo)
+values(10,6);
+insert into venda_itemVenda(viv_venCodigo,viv_itvCodigo)
+values(11,3);
+insert into venda_itemVenda(viv_venCodigo,viv_itvCodigo)
+values(11,4);
