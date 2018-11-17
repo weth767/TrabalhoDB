@@ -97,7 +97,7 @@ COMMENT = 'Tabela para armazenar os dados dos funcionarios do supermercado';
 -- Table `supermercado`.`caixa`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `supermercado`.`caixa` (
-  `caiCodigo` INT NOT NULL COMMENT 'Codigo, campo para identificar o caixa do supermercado(Caixa que armazena dinheiro, não funcionario)',
+  `caiCodigo` INT NOT NULL AUTO_INCREMENT COMMENT 'Codigo, campo para identificar o caixa do supermercado(Caixa que armazena dinheiro, não funcionario)',
   `caiHoraAbertura` TIME NOT NULL COMMENT 'HoraAbertura, campo para armazenar a hora abertura do caixa',
   `caiHoraFechamento` TIME NULL COMMENT 'HoraFechamento, campo para armazenar a hora de fechamento do caixa',
   `caiData` DATE NOT NULL COMMENT 'Data, campo para armazenar a data atual do caixa',
@@ -190,7 +190,7 @@ COMMENT = 'Tabela para armazenar os recebimentos do supermercado';
 -- Table `supermercado`.`item_venda`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `supermercado`.`item_venda` (
-  `itvCodigo` INT NOT NULL COMMENT 'Codigo, campo para identificar o item de venda',
+  `itvCodigo` INT NOT NULL AUTO_INCREMENT COMMENT 'Codigo, campo para identificar o item de venda',
   `itvQuantidade` FLOAT NOT NULL COMMENT 'Quantidade, campo para armazenar a quantidade do item de venda do produto',
   `itvDesconto` FLOAT NOT NULL DEFAULT 0 COMMENT 'Desconto, campo para armazenar o desconto do item de venda do produto',
   `itvValorTotal` FLOAT NOT NULL COMMENT 'ValorTotal, campo para armazenar o valor total do item de venda do produto',
@@ -237,7 +237,7 @@ COMMENT = 'Tabela para armazenar as compras do supermercado';
 -- Table `supermercado`.`item_compra`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `supermercado`.`item_compra` (
-  `itcCodigo` INT NOT NULL COMMENT 'Codigo, campo para identificar o item de compra',
+  `itcCodigo` INT NOT NULL AUTO_INCREMENT COMMENT 'Codigo, campo para identificar o item de compra',
   `itc_proCodigo` INT NOT NULL COMMENT 'Codigo do produto, FK do produto, para armazenar os dados do produto do item de compra',
   `itcQuantidade` INT NOT NULL COMMENT 'Quantidade, campo para armazenar a quantidade de produtos(mesmo produto) do item de compra',
   `itcValorTotal` FLOAT NOT NULL COMMENT 'ValorTotal, campo para armazenar ',
@@ -256,7 +256,7 @@ COMMENT = 'Tabela para armazenar os itens de compra dos produtos do supermercado
 -- Table `supermercado`.`conta_pagar`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `supermercado`.`conta_pagar` (
-  `ctpCodigo` INT NOT NULL COMMENT 'Codigo, campo para identificar a conta a pagar',
+  `ctpCodigo` INT NOT NULL AUTO_INCREMENT COMMENT 'Codigo, campo para identificar a conta a pagar',
   `ctrData` DATE NOT NULL COMMENT 'Data, campo para armazenar a data da conta a pagar',
   `ctrFormaPagamento` VARCHAR(20) NOT NULL COMMENT 'FormaPagamento, campo para armazenar a forma de pagamento da conta a pagar',
   `ctrQuantidadeParcelas` INT NOT NULL COMMENT 'QuantidadeParcelas, campo para armazenar a quantidade de parcelas gerada na conta a pagar',
@@ -278,7 +278,7 @@ COMMENT = 'Tabela para armazernar as contas a pagar do supermercado';
 -- Table `supermercado`.`pagamento`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `supermercado`.`pagamento` (
-  `pagCodigo` INT NOT NULL COMMENT 'Codigo, campo para identificar os pagamentos do supermercado',
+  `pagCodigo` INT NOT NULL AUTO_INCREMENT COMMENT 'Codigo, campo para identificar os pagamentos do supermercado',
   `pagData` DATE NOT NULL COMMENT 'Data, campo para armazenar a data dos pagamentos do supermercado',
   `pagHora` TIME NOT NULL COMMENT 'Hora, campo para armazenar os pagamentos do supermercado',
   `pagValorPago` FLOAT NOT NULL COMMENT 'ValorPago, campo para armazenar o valor que foi pago pelo supermercado',
