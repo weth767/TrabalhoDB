@@ -391,3 +391,41 @@ insert into pagamento(pagData,pagHora,pagValorPago,pagStatus,pag_ctpCodigo)
 values("2018-11-30","19:30",25000,true,5);
 insert into pagamento(pagData,pagHora,pagValorPago,pagStatus,pag_ctpCodigo)
 values("2018-05-19","16:16",1000,false,6);
+#inserts da conta_receber
+insert into conta_receber(ctrData,ctrFormaRecebimento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_venCodigo)
+values('2018-11-17',"Cartão de Débito",1,250.58,"17",1);
+insert into conta_receber(ctrData,ctrFormaRecebimento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_venCodigo)
+values('2018-11-17',"Cartão de Crédito",2,152.64,"17",3);
+insert into conta_receber(ctrData,ctrFormaRecebimento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_venCodigo)
+values('2018-11-17',"À Vista",1,86.98,"17",2);
+insert into conta_receber(ctrData,ctrFormaRecebimento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_venCodigo)
+values('2018-11-17',"Caderneta",3,380.52,"15",4);
+insert into conta_receber(ctrData,ctrFormaRecebimento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_venCodigo)
+values('2018-11-17',"À Vista",1,61.45,"17",5);
+insert into conta_receber(ctrData,ctrFormaRecebimento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_venCodigo)
+values('2018-11-17',"Caderneta",4,352.76,"10",7);
+insert into conta_receber(ctrData,ctrFormaRecebimento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_venCodigo)
+values('2018-11-17',"Cartão de Débito",1,50.03,"17",6);
+insert into conta_receber(ctrData,ctrFormaRecebimento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_venCodigo)
+values('2018-11-17',"Cartão de Crédito",1,27.49,"17",8);
+insert into conta_receber(ctrData,ctrFormaRecebimento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_venCodigo)
+values('2018-11-17',"À Vista",1,109.73,"17",10);
+insert into conta_receber(ctrData,ctrFormaRecebimento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_venCodigo)
+values('2018-11-17',"Cartão de Crédito",3,210.09,"17",9);
+#inserts do recebimento
+insert into recebimento(recData,recHora,recValorRecebido,recStatus,rec_ctrCodigo)
+values('2018-11-17','08:36:09',250.58,true,1);
+insert into recebimento(recData,recHora,.recValorRecebido,recStatus,rec_ctrCodigo)
+values('2018-11-17','08:55:06',86.98,true,3);
+insert into recebimento(recData,recHora,recValorRecebido,recStatus,rec_ctrCodigo)
+values('2018-11-17','09:16:13',152.64,true,2);
+insert into recebimento(recData,recHora,recValorRecebido,recStatus,rec_ctrCodigo)
+values('2018-11-17','09:56:09',61.45,true,5);
+insert into recebimento(recData,recHora,recValorRecebido,recStatus,rec_ctrCodigo)
+values('2018-11-17','14:26:14',61.45,true,7);
+insert into recebimento(recData,recHora,recValorRecebido,recStatus,rec_ctrCodigo)
+values('2018-11-17','15:23:11',27.49,true,8);
+insert into recebimento(recData,recHora,recValorRecebido,recStatus,rec_ctrCodigo)
+values('2018-11-17','18:36:08',210.09,true,10);
+insert into recebimento(recData,recHora,recValorRecebido,recStatus,rec_ctrCodigo)
+values('2018-11-17','19:06:07',109.73,true,9);
