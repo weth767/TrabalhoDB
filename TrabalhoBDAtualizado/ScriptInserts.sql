@@ -429,3 +429,4 @@ insert into recebimento(recData,recHora,recValorRecebido,recStatus,rec_ctrCodigo
 values('2018-11-17','18:36:08',210.09,true,10);
 insert into recebimento(recData,recHora,recValorRecebido,recStatus,rec_ctrCodigo)
 values('2018-11-17','19:06:07',109.73,true,9);
+
