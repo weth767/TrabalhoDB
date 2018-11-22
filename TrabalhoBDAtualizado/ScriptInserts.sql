@@ -219,41 +219,26 @@ values(210.09,'2018-11-17','18:36',16,15,2);
 insert into venda(venValorTotal,venData,venHora,ven_cliCodigo,ven_funCodigo,caixa_caiCodigo)
 values(109.73,'2018-11-17','19:06',18,12,9);
 #Inserts do item_venda
-insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
-values(5,0,35.0,1);
-insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
-values(2,2.0,29.0,2);
-insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
-values(3,0,25.5,3);
-insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
-values(4,5,31.0,4);
-insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
-values(1,0,7.50,5);
-insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
-values(2,0,8.50,6);
-insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
-values(5,5.50,74.0,7);
-insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
-values(3,0,4.83,8);
-insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
-values(4,2,11.0,9);
-insert into item_venda(itvQuantidade,itvDesconto,itvValorTotal,itv_proCodigo)
-values(1,0,31.90,10); 
-#Inserts do venda_itemVenda
-insert into venda_itemVenda(viv_venCodigo,viv_itvCodigo)
-values(9,2);
-insert into venda_itemVenda(viv_venCodigo,viv_itvCodigo)
-values(9,3);
-insert into venda_itemVenda(viv_venCodigo,viv_itvCodigo)
-values(10,4);
-insert into venda_itemVenda(viv_venCodigo,viv_itvCodigo)
-values(10,5);
-insert into venda_itemVenda(viv_venCodigo,viv_itvCodigo)
-values(10,6);
-insert into venda_itemVenda(viv_venCodigo,viv_itvCodigo)
-values(1,3);
-insert into venda_itemVenda(viv_venCodigo,viv_itvCodigo)
-values(1,4);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorUnitario,itv_proCodigo,itv_venCodigo)
+values(5,0,35.0,1,2);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorUnitario,itv_proCodigo,itv_venCodigo)
+values(2,2.0,29.0,2,3);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorUnitario,itv_proCodigo,itv_venCodigo)
+values(3,0,25.5,3,4);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorUnitario,itv_proCodigo,itv_venCodigo)
+values(4,5,31.0,4,5);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorUnitario,itv_proCodigo,itv_venCodigo)
+values(1,0,7.50,5,6);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorUnitario,itv_proCodigo,itv_venCodigo)
+values(2,0,8.50,6,3);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorUnitario,itv_proCodigo,itv_venCodigo)
+values(5,5.50,74.0,7,4);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorUnitario,itv_proCodigo,itv_venCodigo)
+values(3,0,4.83,8,1);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorUnitario,itv_proCodigo,itv_venCodigo)
+values(4,2,11.0,9,4);
+insert into item_venda(itvQuantidade,itvDesconto,itvValorUnitario,itv_proCodigo,itv_venCodigo)
+values(1,0,31.90,10,3); 
 #Inserte tabela Compra
 insert into compra(comData, comHora,comValor,com_funCodigo,com_forCodigo)
 values("2018-12-25","10:20",200.70,1,1);
@@ -276,87 +261,46 @@ values("2018-12-30","15:09",22.90,3,9);
 insert into compra(comData, comHora,comValor,com_funCodigo,com_forCodigo)
 values("2018-10-15","12:29",157.79,5,1);   
 #Inserte tabela item Compra
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(1,700,700);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(2,50,20.99);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(3,71,72.99);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(4,7,2.78);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(5,60,99.12);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(6,70,71.91);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(7,87,32);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(8,788,98.00);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(9,502,120.98);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(10,712,7000);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(11,12,2986.98);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(12,871,10000.90);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(13,776,721);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(14,98,72);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(15,1,22.60);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(16,89,99.01);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(17,12,100);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(18,98,178.00);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(19,8100,10000);
-insert into item_compra(itc_proCodigo,itcQuantidade,itcValorTotal)
-values(20,87,123.08);
-#inserte na tabela compra_itemCompra
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(1,2);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(2,2);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(3,3);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(4,4);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(5,5);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(5,6);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(4,7);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(8,8);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(7,9);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(2,10);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(3,11);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(4,12);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(5,13);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(6,14);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(7,15);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(8,16);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(9,17);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(10,18);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(2,19);
-insert into compra_itemCompra(cic_comCodigo,cic_itcCodigo)
-values(4,20);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(1,700,700,1);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(2,50,20.99,2);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(3,71,72.99,3);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(4,7,2.78,4);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(5,60,99.12,5);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(6,70,71.91,5);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(7,87,32,4);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(8,788,98.00,8);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(9,502,120.98,7);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(10,712,7000,2);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(11,12,2986.98,3);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(12,871,10000.90,4);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(13,776,721,5);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(14,98,72,6);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(15,1,22.60,7);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(16,89,99.01,8);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(17,12,100,9);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(18,98,178.00,1);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(19,8100,10000,2);
+insert into item_compra(itc_proCodigo,itcQuantidade,itcValorUnitario,itc_comCodigo)
+values(20,87,123.08,4);
 #inserte na tabela conta_pagar
 insert into conta_pagar(ctrData,ctrFormaPagamento,ctrQuantidadeParcelas,ctrValorParcelas,ctrDiaVencimentos,ctr_comCodigo)
 values("2018-09-12","Cartao Credito",10,2,25,1);
@@ -415,7 +359,7 @@ values('2018-11-17',"Cartão de Crédito",3,210.09,"17",9);
 #inserts do recebimento
 insert into recebimento(recData,recHora,recValorRecebido,recStatus,rec_ctrCodigo)
 values('2018-11-17','08:36:09',250.58,true,1);
-insert into recebimento(recData,recHora,.recValorRecebido,recStatus,rec_ctrCodigo)
+insert into recebimento(recData,recHora,recValorRecebido,recStatus,rec_ctrCodigo)
 values('2018-11-17','08:55:06',86.98,true,3);
 insert into recebimento(recData,recHora,recValorRecebido,recStatus,rec_ctrCodigo)
 values('2018-11-17','09:16:13',152.64,true,2);
@@ -429,4 +373,3 @@ insert into recebimento(recData,recHora,recValorRecebido,recStatus,rec_ctrCodigo
 values('2018-11-17','18:36:08',210.09,true,10);
 insert into recebimento(recData,recHora,recValorRecebido,recStatus,rec_ctrCodigo)
 values('2018-11-17','19:06:07',109.73,true,9);
-
