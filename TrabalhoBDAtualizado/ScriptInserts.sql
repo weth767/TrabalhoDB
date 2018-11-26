@@ -1,3 +1,4 @@
+use supermercado;
 #Inserts dos clientes
 insert into cliente(cliNome,cliCPF, cliRG,cliTelefone, cliCelular, cliEstado, cliCidade, cliBairro, cliRua, cliNumero)
 values("João Paulo de Souza","11111111111","158474524",null,"44999004897","Paraná","Umuarama","Jardim Carolina","Mundo Novo",3474);

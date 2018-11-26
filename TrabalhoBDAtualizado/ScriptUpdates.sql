@@ -1,3 +1,4 @@
+use supermercado;
 update cliente
 set cliNome = "Jefffffff Bigoode"
 where cliCodigo = 4;
